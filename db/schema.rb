@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170124184255) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -29,7 +32,8 @@ ActiveRecord::Schema.define(version: 20170124184255) do
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.integer  "category_id"
-    t.index ["category_id"], name: "index_products_on_category_id"
+    t.index ["category_id"], name: "index_products_on_category_id", using: :btree
   end
 
+  add_foreign_key "products", "categories"
 end
