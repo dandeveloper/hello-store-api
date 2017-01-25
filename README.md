@@ -1,24 +1,47 @@
-# README
+# Profite API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Api básica utilizada para estudos.
 
-Things you may want to cover:
+* Ruby version: 2.3.1
 
-* Ruby version
+* Rails version: 5.0.1
 
-* System dependencies
 
-* Configuration
+# API
 
-* Database creation
+## Endpoints
 
-* Database initialization
+#### Category
 
-* How to run the test suite
+* https://estudoprofite.herokuapp.com/categories - GET / POST
 
-* Services (job queues, cache servers, search engines, etc.)
+* https://estudoprofite.herokuapp.com/categories/{:id} - GET / PUT / PATCH
 
-* Deployment instructions
 
-* ...
+#### Product
+
+* https://estudoprofite.herokuapp.com/products - GET / POST
+
+* https://estudoprofite.herokuapp.com/products/{:id} - GET / PUT / PATCH
+
+
+## Schemas
+```
+{"entity": {
+    "attribute1": "value",
+    "attribute2": "value",
+  }
+}
+```
+#### Expemples
+```
+{"product": {
+    "name": "Livro Rails 5",
+    "description": "Livro que ensina o Framework Rails e permite você desenvolver um site do zero ao deploy usando as melhores técnicas de desenvolvimento.",
+    "short_description": "Livro que ensina o Framework Rails",
+    "price": 40.00,
+    "best_price": 29.99,
+    "quantity": 50
+  }
+}
+```
