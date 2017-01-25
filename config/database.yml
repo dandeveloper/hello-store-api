@@ -2,14 +2,12 @@ development:
   adapter: postgresql
   database: estudoprofite_development
   host: localhost
-  username: user
   pool: 5
   timeout: 5000
 test:
   adapter: postgresql
   database: estudoprofite_test
   host: localhost
-  username: user
   pool: 5
   timeout: 5000
 
@@ -17,6 +15,5 @@ production:
   adapter: postgresql
   database: estudoprofite_production
   host: localhost
-  username: user
   pool: 5
   timeout: 5000
