@@ -13,16 +13,16 @@ Api básica utilizada para estudos.
 
 #### Category
 
-* https://estudoprofite.herokuapp.com/categories - GET / POST
+* https://profite-study-api.herokuapp.com/api/categories - GET / POST
 
-* https://estudoprofite.herokuapp.com/categories/{:id} - GET / PUT / PATCH
+* https://profite-study-api.herokuapp.com/api/categories/{:id} - GET / PUT / PATCH
 
 
 #### Product
 
-* https://estudoprofite.herokuapp.com/products - GET / POST
+* https://profite-study-api.herokuapp.com/api/products - GET / POST
 
-* https://estudoprofite.herokuapp.com/products/{:id} - GET / PUT / PATCH
+* https://profite-study-api.herokuapp.com/api/products/{:id} - GET / PUT / PATCH
 
 
 ## Schemas
