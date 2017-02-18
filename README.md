@@ -2,7 +2,7 @@
 
 Api básica utilizada para estudos.
 
-* Ruby version: 2.3.1
+* Ruby version: 2.3.3
 
 * Rails version: 5.0.1
 
@@ -33,7 +33,7 @@ Api básica utilizada para estudos.
   }
 }
 ```
-#### Expemples
+#### Examples
 ```
 {"product": {
     "name": "Livro Rails 5",
