@@ -45,3 +45,24 @@ Api básica utilizada para estudos.
   }
 }
 ```
+
+## Attributes
+
+#### Category
+
+string   __"name"__  
+text     __"description"__  
+datetime __"created_at"__,  null: false _(It's an automatic field.)_  
+datetime __"updated_at"__,  null: false _(It's an automatic field.)_  
+
+#### Product
+
+string   __"name"__  
+text     __"description"__  
+string   __"short_description"__  
+decimal  __"price"__  
+decimal  __"best_price"__  
+integer  __"quantity"__  
+datetime __"created_at"__,        null: false _(It's an automatic field.)_  
+datetime __"updated_at"__,        null: false _(It's an automatic field.)_  
+integer  __"category_id"__  
