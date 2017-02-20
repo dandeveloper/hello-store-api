@@ -26,15 +26,26 @@ Api básica utilizada para estudos.
 
 
 ## Schemas
-```
+```Json
 {"entity": {
     "attribute1": "value",
     "attribute2": "value",
   }
 }
 ```
-#### Examples
+
+OR
+
+```Json
+{
+  "attribute1": "value",
+  "attribute2": "value",
+}
 ```
+## Examples
+
+__Json Format__
+```Json
 {"product": {
     "name": "Livro Rails 5",
     "description": "Livro que ensina o Framework Rails e permite você desenvolver um site do zero ao deploy usando as melhores técnicas de desenvolvimento.",
@@ -44,6 +55,108 @@ Api básica utilizada para estudos.
     "quantity": 50
   }
 }
+```
+
+OR
+
+```Json
+{
+  "name": "Livro Rails 5",
+  "description": "Livro que ensina o Framework Rails e permite você desenvolver um site do zero ao deploy usando as melhores técnicas de desenvolvimento.",
+  "short_description": "Livro que ensina o Framework Rails",
+  "price": 40.00,
+  "best_price": 29.99,
+  "quantity": 50
+}
+```
+
+#### JavaScript Examples XHR
+__GET__
+```JavaScript
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://profite-study-api.herokuapp.com/api/categories", true);
+xhr.setRequestHeader("Content-type", "application/json");
+xhr.setRequestHeader("Authorization", "Token token=API_TOKEN");
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.send();
+```
+----
+__POST__
+
+```JavaScript
+var data = {
+    name: "Categoria js",
+    description: "Essa é uma Terceira Categoria enviada por JS"
+};
+data = JSON.stringify(data);
+var xhr = new XMLHttpRequest();
+xhr.open("POST", "https://profite-study-api.herokuapp.com/api/categories/{:id}", true);
+xhr.setRequestHeader("Content-type", "application/json");
+xhr.setRequestHeader("Authorization", "Token token=API_TOKEN");
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.send(data);
+```
+----
+__PUT__
+
+```JavaScript
+var data = {
+    name: "Categoria Alterada",
+    description: "Essa é uma descrição alterada pelo PUT."
+};
+data = JSON.stringify(data);
+var xhr = new XMLHttpRequest();
+xhr.open("PUT", "https://profite-study-api.herokuapp.com/api/categories/{:id}", true);
+xhr.setRequestHeader("Content-type", "application/json");
+xhr.setRequestHeader("Authorization", "Token token=API_TOKEN");
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.send(data);
+```
+----
+__PATCH__
+
+```JavaScript
+var data = {
+    description: "Essa é uma descrição alterada pelo PATCH."
+};
+data = JSON.stringify(data);
+var xhr = new XMLHttpRequest();
+xhr.open("PATCH", "https://profite-study-api.herokuapp.com/api/categories/{:id:}", true);
+xhr.setRequestHeader("Content-type", "application/json");
+xhr.setRequestHeader("Authorization", "Token token=API_TOKEN");
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.send(data);
+```
+----
+__DELETE__
+
+```JavaScript
+var xhr = new XMLHttpRequest();
+xhr.open("DELETE", "https://profite-study-api.herokuapp.com/api/categories/{:id}", true);
+xhr.setRequestHeader("Content-type", "application/json");
+xhr.setRequestHeader("Authorization", "Token token=API_TOKEN");
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        console.log(xhr.responseText);
+    }
+}
+xhr.send(null);
 ```
 
 ## Attributes
