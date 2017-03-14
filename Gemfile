@@ -29,9 +29,6 @@ gem 'rack-attack'
 # gem Postgresql
 gem 'pg'
 
-# gem sqlite3
-gem "sqlite3", "~> 1.3.6"
-
 gem 'active_model_serializers', '~> 0.10.0'
 
 group :development, :test do
@@ -41,6 +38,8 @@ group :development, :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem 'faker'
+  # gem sqlite3
+  gem "sqlite3", "~> 1.3.6"
 end
 
 group :development do
