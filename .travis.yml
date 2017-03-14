@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  - 2.3.3p222
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rails test
