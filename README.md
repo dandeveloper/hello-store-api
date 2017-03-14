@@ -1,5 +1,7 @@
 # Profite API
 
+[![Build Status](https://travis-ci.org/dandeveloper/profite-study-api.svg?branch=master)](https://travis-ci.org/dandeveloper/profite-study-api)
+
 Api básica utilizada para estudos.
 
 * Ruby version: 2.3.3
