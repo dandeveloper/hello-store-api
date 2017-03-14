@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  short_description: MyString
+  name: Product One
+  description: Product One Long Description
+  short_description: Product One Short Description
   price: 9.99
   best_price: 9.99
   quantity: 1
-  references: 
+  category_id: 1
 
 two:
-  name: MyString
-  description: MyText
-  short_description: MyString
+  name: Product Two
+  description: Product Two Long Description
+  short_description: Product Tow Short Description
   price: 9.99
   best_price: 9.99
   quantity: 1
-  references: 
+  category_id: 1
