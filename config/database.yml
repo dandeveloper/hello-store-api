@@ -1,13 +1,12 @@
 development:
-  adapter: postgresql
-  database: profite-study-api_development
-  host: localhost
+  adapter: sqlite3
+  database: db/profite-study-api_development.sqlite3
   pool: 5
   timeout: 5000
+  
 test:
-  adapter: postgresql
-  database: profite-study-api_test
-  host: localhost
+  adapter: sqlite3
+  database: db/profite-study-api_test.sqlite3
   pool: 5
   timeout: 5000
 
