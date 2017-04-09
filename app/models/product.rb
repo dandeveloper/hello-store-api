@@ -1,8 +1,10 @@
 class Product < ApplicationRecord
 
-  belongs_to :category
+  belongs_to :category, required: false
 
-  validates :category, :name, :quantity, presence: true
+  validates :name, :quantity, presence: true, :on => :create
+
+  validates :category_id, presence: true, :on => :create
 
   validates :quantity, numericality: { only_integer: true }
 
