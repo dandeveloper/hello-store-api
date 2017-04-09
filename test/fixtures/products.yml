@@ -5,9 +5,8 @@ one:
   description: Product One Long Description
   short_description: Product One Short Description
   price: 9.99
-  best_price: 9.99
-  quantity: 1
-  category_id: 1
+  best_price: 10.99
+  quantity: 10
 
 two:
   name: Product Two
@@ -15,5 +14,4 @@ two:
   short_description: Product Tow Short Description
   price: 9.99
   best_price: 9.99
-  quantity: 1
-  category_id: 1
+  quantity: 9
