@@ -12,4 +12,6 @@ class Product < ApplicationRecord
 
   # scope :search_by_name, ->(query) {where("name like ?", "%#{query}%")}
 
+  mount_uploader :image, ImageUploader
+
 end
