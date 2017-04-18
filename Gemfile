@@ -33,12 +33,18 @@ gem 'active_model_serializers', '~> 0.10.0'
 
 gem 'carrierwave', '~> 1.0'
 
+# Gem for pagination
+gem 'kaminari'
+
+# Paginate in headers, not in your response body. This follows the proposed RFC-5988 standard for Web linking.
+gem 'api-pagination'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
   gem 'rspec-rails', '~> 3.5'
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", "~> 4.0"
   gem 'faker'
   # gem sqlite3
   gem "sqlite3", "~> 1.3.6"
