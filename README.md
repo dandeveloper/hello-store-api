@@ -1,6 +1,6 @@
 # Profite API
 
-[![Build Status](https://travis-ci.org/dandeveloper/profite-study-api.svg?branch=master)](https://travis-ci.org/dandeveloper/profite-study-api)
+[![Build Status](https://travis-ci.org/dandeveloper/hello-store-api.svg?branch=master)](https://travis-ci.org/dandeveloper/hello-store-api)
 
 Api básica utilizada para estudos.
 
